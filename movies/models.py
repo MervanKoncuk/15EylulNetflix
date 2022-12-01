@@ -14,6 +14,11 @@ class Movie(models.Model):
     # no such table/column
     kategori = models.ForeignKey(Kategori, on_delete=models.SET_NULL, null=True)
     
+
+
+
+
+    
     isim = models.CharField(max_length=100)
     resim = models.FileField(upload_to='filmler/')
     aciklama = models.CharField(max_length=100, null=True, blank=True)
